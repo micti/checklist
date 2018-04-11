@@ -2,14 +2,49 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <title>Checklist!</title>
+    <style>
+      h1 {
+        font-size: 20px;
+      }
+
+      .grids {
+        margin-top: 5px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .grid {
+        cursor: pointer;
+        display: block;
+        width: 40px;
+        padding: 12px 0;
+        font-size: 16px;
+        line-height: 1;
+        background: #eee;
+        margin: 0 3px 3px 0;
+        text-align: center;
+      }
+
+      .grid.active {
+        background: #bbb;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+    <div>
+      <h1>Check list</h1>
+      <span>How many items?</span><br>
+      <input value="50" id="total" type="number" name="total">
+      <button id="apply">
+      Apply
+      </button>
+    </div>
+
+    <div id="grids" class="grids">
+
+    </div>
+
 
     <script>
       // You can also require other files to run in this process

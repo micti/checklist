@@ -1,20 +1,17 @@
 {
-  "name": "electron-quick-start",
+  "name": "checklist",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "Checklist",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/micti/checklist",
   "keywords": [
     "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "checklist"
   ],
-  "author": "GitHub",
+  "author": "Le Nhat Anh",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^1.8.4"
